@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "ssshot",
+  "version": "1.0",
+  "description": "Let you select region of interest",
+
+  "icons": {
+    "128": "128.png",
+    "48": "48.png",
+    "16": "16.png"
+  },
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "permissions": ["tabs", "<all_urls>", "contextMenus"],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["screenshot.js", "jquery-3.1.0.min.js"]
+    }
+  ]
+}
