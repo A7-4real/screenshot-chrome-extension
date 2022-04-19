@@ -5,4 +5,4 @@ example 1 -
 ![alt text](https://github.com/A7-4real/screenshot-chrome-extension/blob/main/resources/screenshot-search-btn-embed.JPG)
 
 example 2 - 
-![alt text](https://github.com/A7-4real/screenshot-chrome-extension/blob/main/resources/screenshot-search-btn-embed.JPG)
+![alt text](https://github.com/A7-4real/screenshot-chrome-extension/blob/main/resources/screenshot-whatsapp.JPG)
