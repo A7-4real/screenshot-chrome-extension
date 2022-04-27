@@ -95,7 +95,7 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
           'cursor:pointer;box-sizing:content-box;height:29px;width:29px;position:absolute;z-index:3;float:right;background-color:rgba(130, 186, 255, 0);"><svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg"> <g> <ellipse ry="87" rx="86" id="svg_1" cy="121.999997" cx="123.000003" stroke-width="25" stroke="#2c93e3" fill="#000000" fill-opacity="0"/> <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="267.499998" x2="251.500004" y1="193.5" x1="185.5" stroke-opacity="null" stroke-width="30" stroke="#2c93e3" fill="none"/> </g></svg></div>'
       );
 
-      a; // append canvas to users web page
+      // append canvas to users web page
       div.append(
         "<canvas width=" +
           img.width +
