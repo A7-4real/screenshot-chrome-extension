@@ -92,10 +92,10 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
       div.append(
         '<div class="SSS-screenshot-search" style="' +
           defaultCSS +
-          'cursor:pointer;box-sizing:content-box;height:29px;width:29px;position:absolute;z-index:3;float:right;background-color:rgba(130, 186, 255, 0);"><svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg"> <g> <ellipse ry="87" rx="86" id="svg_1" cy="121.999997" cx="123.000003" stroke-width="25" stroke="#2c93e3" fill="#000000" fill-opacity="0"/> <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="267.499998" x2="251.500004" y1="193.5" x1="185.5" stroke-opacity="null" stroke-width="30" stroke="#2c93e3" fill="none"/> </g></svg></div>'
+          'cursor:pointer;box-sizing:content-box;height:29px;width:29px;font-weight:bold;position:absolute;z-index:3;float:right;background-color:rgba(130, 186, 255, 0);"><svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg"> <g> <ellipse ry="87" rx="86" id="svg_1" cy="121.999997" cx="123.000003" stroke-width="25" stroke="#66ff00" fill="#000000" fill-opacity="0"/> <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="267.499998" x2="251.500004" y1="193.5" x1="185.5" stroke-opacity="null" stroke-width="30" stroke="#66ff00" fill="none"/> </g></svg></div>'
       );
 
-      a; // append canvas to users web page
+      // append canvas to users web page
       div.append(
         "<canvas width=" +
           img.width +
@@ -109,7 +109,7 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
       div.append(
         '<div class="SSS-screenshot-close" style="' +
           defaultCSS +
-          'position:absolute;z-index:3;cursor:pointer;user-select: none;width: 29px;height: 29px;font-size: 30px;text-align: center;line-height:0px;background: rgba(193, 22, 59, 0);"><svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg"> <g> <line stroke-linecap="null" stroke="#2c93e3" stroke-linejoin="null" id="svg_3" y2="250" x2="250" y1="50" x1="50" stroke-opacity="null" stroke-width="30" fill="none"/> <line stroke="#2c93e3" transform="rotate(-90 142.00000000000003,148.5) " stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="250" x2="250" y1="50" x1="50" stroke-opacity="null" stroke-width="30" fill="none"/> </g></svg></div>'
+          'position:absolute;z-index:3;cursor:pointer;user-select: none;width: 29px;height: 29px;font-size: 30px; font-weight: bold; text-align: center;line-height:0px;background: rgba(193, 22, 59, 0);"><svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg"> <g> <line stroke-linecap="null" stroke="#DD0004" stroke-linejoin="null" id="svg_3" y2="250" x2="250" y1="50" x1="50" stroke-opacity="null" stroke-width="30" fill="none"/> <line stroke="#DD0004" transform="rotate(-90 142.00000000000003,148.5) " stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="250" x2="250" y1="50" x1="50" stroke-opacity="null" stroke-width="30" fill="none"/> </g></svg></div>'
       );
 
       div.append(
@@ -214,6 +214,8 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
       }
     };
   }
+
+  sendResponse(true);
 });
 
 // function takeScreenshot(screenshotUrl) {
