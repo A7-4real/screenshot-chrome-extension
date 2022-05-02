@@ -196,6 +196,7 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
         ctx.putImageData(imgData, 0, 0);
         var dataURL = canvas1.toDataURL();
         console.log(dataURL);
+
         chrome.extension.sendMessage({
           job: "beginImageSearch",
           base64: dataURL,
